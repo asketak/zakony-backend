@@ -16,7 +16,7 @@ pinecone.init(
 	environment='asia-southeast1-gcp'      
 )
 index = pinecone.Index("prvni")
-model = SentenceTransformer('multi-qa-mpnet-base-dot-v1', device='cuda')
+model = SentenceTransformer('multi-qa-mpnet-base-dot-v1', device='cpu')
 
 device = "cuda"
 # model = GPTJForCausalLM.from_pretrained(
